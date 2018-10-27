@@ -5,13 +5,7 @@ const groupAdultsByAgeRange = (array) => {
     const result4 = {};
     const result5 = {};
 
-   array.filter(x => {
-    if (x.age > 18 && x.age < 20) {
-        result1
-
-    }
-
-   })
+   
 
 
 

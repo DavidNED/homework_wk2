@@ -6,28 +6,23 @@
         }
 
     getItems() {
-        return this.newCart;
-        }
+        return this.newCart;}
     
 
     addItem(itemName, quantity, price) {
         let newObj = {'name': itemName, 'quantity': quantity, 'pricePerUnit': price}
-        this.newCart.push(newObj) 
-        console.log(newCart)
-        
-        
-    }
+        this.newCart.push(newObj)}
 
 
     clear() {
-        return this.newCart.length = 0
-    }
+        this.newCart.length = 0}
 
 
-    cartTotal() {
-        return this.getItems()
+    total() {
+       return this.getItems().reduce((acc, value) => acc + value.price * value.quantity)
     }
-}
+
+    }
 
 
 
