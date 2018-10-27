@@ -10,3 +10,5 @@ class Cart {
     return this.newCart;
     }
 }
+
+module.exports.Cart = Cart
